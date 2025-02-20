@@ -24,7 +24,7 @@ export const syncUserCreation = inngest.createFunction(
 )
 
 //ingest function to save user data to ad database
-export const syncUserUpdateion = inngest.createFunction(
+export const syncUserUpdation = inngest.createFunction(
     {
         id: 'update-user-from-clerk'
     },
