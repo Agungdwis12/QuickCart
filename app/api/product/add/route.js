@@ -11,7 +11,6 @@ cloudinary.config({
   cloud_name: process.env.CLOUDINARY_CLOUD_NAME,
   api_key: process.env.CLOUDINARY_API_KEY,
   api_secret: process.env.CLOUDINARY_API_SECRET
-
 })
 
 export async function POST(request) {
@@ -34,7 +33,7 @@ export async function POST(request) {
         const price = formData.get('price');
         const offerPrice = formData.get('offerPrice');
         
-
+        
         const files = formData.getAll('images');
 
         if (!files || files.length === 0) {

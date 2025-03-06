@@ -1,4 +1,5 @@
 import logo from "./logo.svg";
+import logo1 from "./logo1.svg";
 import search_icon from "./search_icon.svg";
 import user_icon from "./user_icon.svg";
 import cart_icon from "./cart_icon.svg";
@@ -46,9 +47,50 @@ import product_details_page_apple_earphone_image2 from "./product_details_page_a
 import product_details_page_apple_earphone_image3 from "./product_details_page_apple_earphone_image3.png";
 import product_details_page_apple_earphone_image4 from "./product_details_page_apple_earphone_image4.png";
 import product_details_page_apple_earphone_image5 from "./product_details_page_apple_earphone_image5.png";
+import img1 from "./img1.jpg";
+import img2 from "./img2.jpg";
+import img3 from "./img3.jpg";
+import img4 from "./img4.jpg";
+import img5 from "./img5.jpg";
+import img6 from "./img6.jpg";
+import img7 from "./img7.jpg";
+import img8 from "./img8.jpg";
+import img9 from "./img9.jpg";
+import img10 from "./img10.jpg";
+
+import header1 from "./header1.png";
+import header2 from "./header2.png";
+import header3 from "./header3.png";
+import footer1 from "./footer1.png";
+import footer2 from "./footer2.png";
+
+import boy_shoes from "./boy_shoes.png";
+import boy_shoes1 from "./boy_shoes1.png";
+import boy_shoes2 from "./boy_shoes2.png";
+
+
 
 export const assets = {
+  img1,
+  img2,
+  img3,
+  img4,
+  img5,
+  img6,
+  img7,
+  img8,
+  img9,
+  img10,
+  header1,
+  header2,
+  header3,
+  footer1,
+  footer2,
+  boy_shoes,
+  boy_shoes1,
+  boy_shoes2,
   logo,
+  logo1,
   search_icon,
   user_icon,
   cart_icon,
@@ -95,7 +137,7 @@ export const assets = {
   product_details_page_apple_earphone_image3,
   product_details_page_apple_earphone_image4,
   product_details_page_apple_earphone_image5,
-  checkmark
+  checkmark,
 };
 
 export const BagIcon = () => {
