@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import React from "react";
 import { assets } from "@/assets/assets";
 import OrderSummary from "@/components/OrderSummary";
@@ -6,8 +6,13 @@ import Image from "next/image";
 import Navbar from "@/components/Navbar";
 import { useAppContext } from "@/context/AppContext";
 
-const Cart = () => {
+const formatRupiah = (angka) => {
+  return `Rp${new Intl.NumberFormat("id-ID", {
+    maximumFractionDigits: 0,
+  }).format(angka)}`;
+};
 
+const Cart = () => {
   const { products, router, cartItems, addToCart, updateCartQuantity, getCartCount } = useAppContext();
 
   return (
@@ -55,7 +60,7 @@ const Cart = () => {
                           </button>
                         </div>
                       </td>
-                      <td className="py-4 md:px-4 px-1 text-gray-600">${product.offerPrice}</td>
+                      <td className="py-4 md:px-4 px-1 text-gray-600">{formatRupiah(product.offerPrice)}</td>
                       <td className="py-4 md:px-4 px-1">
                         <div className="flex items-center md:gap-2 gap-1">
                           <button onClick={() => updateCartQuantity(product._id, cartItems[itemId] - 1)}>
@@ -67,7 +72,7 @@ const Cart = () => {
                           </button>
                         </div>
                       </td>
-                      <td className="py-4 md:px-4 px-1 text-gray-600">${(product.offerPrice * cartItems[itemId]).toFixed(2)}</td>
+                      <td className="py-4 md:px-4 px-1 text-gray-600">{formatRupiah(product.offerPrice * cartItems[itemId])}</td>
                     </tr>
                   );
                 })}

@@ -14,7 +14,7 @@ const AddProduct = () => {
   const [files, setFiles] = useState([]);
   const [name, setName] = useState('');
   const [description, setDescription] = useState('');
-  const [category, setCategory] = useState('Earphone');
+  const [category, setCategory] = useState('Sports');
   const [price, setPrice] = useState('');
   const [offerPrice, setOfferPrice] = useState('');
 
@@ -108,10 +108,10 @@ const AddProduct = () => {
               Category
             </label>
             <select id="category" className="outline-none md:py-2.5 py-2 px-3 rounded border border-gray-500/40" onChange={(e) => setCategory(e.target.value)} defaultValue={category}>
+
               <option value="Sports">Sports </option>
               <option value="Fashion">Fashion</option>
 
-  
             </select>
           </div>
           <div className="flex flex-col gap-1 w-32">
