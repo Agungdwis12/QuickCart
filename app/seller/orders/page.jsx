@@ -73,9 +73,9 @@ const Orders = () => {
                     </p>
                   </div>
                   <p className="font-medium my-auto">
-                    {currency}
-                    {order.amount}
+                    {currency} {Number(order.amount).toLocaleString("id-ID")}
                   </p>
+
                   <div>
                     <p className="flex flex-col">
                       <span>Method : COD</span>

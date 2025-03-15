@@ -57,6 +57,9 @@ import img7 from "./img7.jpg";
 import img8 from "./img8.jpg";
 import img9 from "./img9.jpg";
 import img10 from "./img10.jpg";
+import img11 from "./img11.jpg";
+import img12 from "./img12.jpg";
+import img13 from "./img13.jpg";
 
 import header1 from "./header1.png";
 import header2 from "./header2.png";
@@ -81,6 +84,9 @@ export const assets = {
   img8,
   img9,
   img10,
+  img11,
+  img12,
+  img13,
   header1,
   header2,
   header3,
